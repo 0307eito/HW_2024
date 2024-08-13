@@ -1,0 +1,18 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: 實習作業
+    chapters:
+      - file: notebooks
+        title: OpenStreetMap 作業
+      - file: QGIS
+        title: QGIS 作業
+      - file: Selenium_hw
+        title: 開源社群專案作業 - Selenium
+      - file: wikidata
+        title: Wikidata 作業
+      - file: 360_photo
+        title: 360° photos 作業
