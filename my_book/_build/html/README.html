@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>360° photos &#8212; 2024 Summer Intern</title>
+    <title>My Book &#8212; 2024 Summer Intern</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
   
@@ -57,10 +57,9 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '360_photo';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'README';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Wikidata" href="wikidata.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -123,6 +122,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -179,12 +180,12 @@
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">實習作業</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">OpenStreetMap 作業</a></li>
 <li class="toctree-l1"><a class="reference internal" href="QGIS.html">QGIS 作業</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Selenium_hw.html">開源社群專案作業 - Selenium</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wikidata.html">Wikidata 作業</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">360° photos 作業</a></li>
+<li class="toctree-l1"><a class="reference internal" href="360_photo.html">360° photos 作業</a></li>
 </ul>
 
     </div>
@@ -256,7 +257,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F360_photo.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FREADME.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -286,7 +287,7 @@
       
       
       
-      <li><a href="_sources/360_photo.md" target="_blank"
+      <li><a href="_sources/README.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -370,7 +371,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>360° photos</h1>
+    <h1>My Book</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -380,8 +381,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#photo-sphere-viewer">使用 Photo Sphere Viewer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#netlify">靜態網站託管平台 Netlify</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usage">Usage</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-the-book">Building the book</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hosting-the-book">Hosting the book</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributors">Contributors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#credits">Credits</a></li>
 </ul>
             </nav>
         </div>
@@ -393,20 +399,36 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="photos">
-<h1>360° photos<a class="headerlink" href="#photos" title="Link to this heading">#</a></h1>
-<section id="photo-sphere-viewer">
-<h2>使用 Photo Sphere Viewer<a class="headerlink" href="#photo-sphere-viewer" title="Link to this heading">#</a></h2>
-<p>照著<a class="reference external" href="https://photo-sphere-viewer.js.org/plugins/#import-official-plugins">官方網站</a>提供的方式，從CDN來導入官方插件，將360度影像呈現在網頁上面。</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="my-book">
+<h1>My Book<a class="headerlink" href="#my-book" title="Link to this heading">#</a></h1>
+<p>This cookiecutter creates a simple boilerplate for a Jupyter Book.</p>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading">#</a></h2>
+<section id="building-the-book">
+<h3>Building the book<a class="headerlink" href="#building-the-book" title="Link to this heading">#</a></h3>
+<p>If you’d like to develop and/or build the My Book book, you should:</p>
+<ol class="arabic simple">
+<li><p>Clone this repository</p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code> (it is recommended you do this within a virtual environment)</p></li>
+<li><p>(Optional) Edit the books source files located in the <code class="docutils literal notranslate"><span class="pre">my_book/</span></code> directory</p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">clean</span> <span class="pre">my_book/</span></code> to remove any existing builds</p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">build</span> <span class="pre">my_book/</span></code></p></li>
+</ol>
+<p>A fully-rendered HTML version of the book will be built in <code class="docutils literal notranslate"><span class="pre">my_book/_build/html/</span></code>.</p>
 </section>
-<section id="netlify">
-<h2>靜態網站託管平台 Netlify<a class="headerlink" href="#netlify" title="Link to this heading">#</a></h2>
-<p>確認靜態網頁在本地端可以正常顯示後，將內容部署到 Netlify 上面，確認在網站上也能夠顯示360度影像。</p>
-<p><img alt="Description of the image" src="_images/myimage_8.png" /></p>
-<blockquote>
-<div><p><strong><a class="reference external" href="https://66b97e5079ffcbf810ae6c4c--graceful-cranachan-a96236.netlify.app/">https://66b97e5079ffcbf810ae6c4c–graceful-cranachan-a96236.netlify.app/</a></strong></p>
-</div></blockquote>
-<p>照片內容為，課程當天使用 RICOH THETA Z1 所拍攝之中研福德宮。</p>
+<section id="hosting-the-book">
+<h3>Hosting the book<a class="headerlink" href="#hosting-the-book" title="Link to this heading">#</a></h3>
+<p>Please see the <a class="reference external" href="https://jupyterbook.org/publish/web.html">Jupyter Book documentation</a> to discover options for deploying a book online using services such as GitHub, GitLab, or Netlify.</p>
+<p>For GitHub and GitLab deployment specifically, the <a class="reference external" href="https://github.com/executablebooks/cookiecutter-jupyter-book">cookiecutter-jupyter-book</a> includes templates for, and information about, optional continuous integration (CI) workflow files to help easily and automatically deploy books online with GitHub or GitLab. For example, if you chose <code class="docutils literal notranslate"><span class="pre">github</span></code> for the <code class="docutils literal notranslate"><span class="pre">include_ci</span></code> cookiecutter option, your book template was created with a GitHub actions workflow file that, once pushed to GitHub, automatically renders and pushes your book to the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch of your repo and hosts it on GitHub Pages when a push or pull request is made to the main branch.</p>
+</section>
+</section>
+<section id="contributors">
+<h2>Contributors<a class="headerlink" href="#contributors" title="Link to this heading">#</a></h2>
+<p>We welcome and recognize all contributions. You can see a list of current contributors in the <a class="reference external" href="https://github.com/0307eito/my_book/graphs/contributors">contributors tab</a>.</p>
+</section>
+<section id="credits">
+<h2>Credits<a class="headerlink" href="#credits" title="Link to this heading">#</a></h2>
+<p>This project is created using the excellent open source <a class="reference external" href="https://jupyterbook.org/">Jupyter Book project</a> and the <a class="reference external" href="https://github.com/executablebooks/cookiecutter-jupyter-book">executablebooks/cookiecutter-jupyter-book template</a>.</p>
 </section>
 </section>
 
@@ -440,15 +462,6 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="wikidata.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Wikidata</p>
-      </div>
-    </a>
 </div>
                 </footer>
               
@@ -465,8 +478,13 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#photo-sphere-viewer">使用 Photo Sphere Viewer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#netlify">靜態網站託管平台 Netlify</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usage">Usage</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-the-book">Building the book</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hosting-the-book">Hosting the book</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributors">Contributors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#credits">Credits</a></li>
 </ul>
   </nav></div>
 
